@@ -11,7 +11,7 @@
 	<groupId>com.ecr</groupId>
 	<artifactId>Eureka-Ribbon</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Eureka-Ribbon</name>
+	<name>Eureka-Ribbon-Hystrix</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
