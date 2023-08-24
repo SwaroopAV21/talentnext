@@ -14,3 +14,6 @@ public class EurekaRibbonHystrizApplication {
 	}
 
 }
+//to run hystri 
+//1.Create a spring boot app and version less than 2.4
+//@HystrixCommand(fallbackMethod="") for ribbon
