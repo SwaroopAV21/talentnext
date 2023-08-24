@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ecr</groupId>
-	<artifactId>Eureka-Ribbon</artifactId>
+	<artifactId>Eureka-Ribbon-Hystrix</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Eureka-Ribbon-Hystrix</name>
 	<description>Demo project for Spring Boot</description>
