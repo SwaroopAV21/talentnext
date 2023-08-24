@@ -39,7 +39,7 @@ public class JsController {
         return js.showall();
     }
     @GetMapping(value="/show/{id}",produces = "application/json")
-    public Optional<JEntity> showbyid(@PathVariable int id){
+    public Optional<JEntity> showbyid(@PathVariable("id") int id){
         return showbyid(id);
     }
 
