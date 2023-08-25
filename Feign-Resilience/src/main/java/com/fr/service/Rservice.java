@@ -27,3 +27,5 @@ public class Rservice {
     }
 }
 //in the fallback method we wil give a class file instead of method.
+//throwable is optional in feign because we will be giving a class file 
+//for eg (name="",fallback=Serviceproxy.class)
