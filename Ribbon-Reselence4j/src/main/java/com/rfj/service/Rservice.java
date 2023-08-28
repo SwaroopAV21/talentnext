@@ -14,6 +14,7 @@ public class Rservice {
     private RestTemplate rt;
 
     //in the name="service_id"
+    //@Retry(name="application-name")it has name attribute and fallbackmethod
     @CircuitBreaker(name="application",fallbackMethod = "fallbackgetprodbyid")
     public REntity getproductbyId(int id){
         REntity jte=rt.getForObject("http://application/dev/js/show/"+id,REntity.class); //http://product-service/js/show/{id}
