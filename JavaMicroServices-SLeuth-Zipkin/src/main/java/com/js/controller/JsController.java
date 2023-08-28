@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.slf4j.Logger;
-import org.slf4j.Logger.Factory;
+import org.slf4j.LoggerFactory;
 
 import com.js.service.JsService;
 import com.js.entity.JEntity;
@@ -30,7 +30,7 @@ public class JsController {
     @Qualifier(value="jsservice")
     private JsService js;
 
-    private Logger log=logger.LoggerFactory.getLogger(JsController.class);
+    private Logger log=LoggerFactory.getLogger(JsController.class);
 
     
     @PostMapping(value="/add",consumes="application/json")@ResponseStatus(code=HttpStatus.CREATED)

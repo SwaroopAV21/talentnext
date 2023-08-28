@@ -1,6 +1,6 @@
 package com.js;
 
-import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Bean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
@@ -20,13 +20,13 @@ public class JavaMicroServicesSZApplication implements CommandLineRunner{
     private JsRepo jr;
 
 	public static void main(String[] args) {
-		SpringApplication.run(JavaMicroServicesApplication.class, args);
+		SpringApplication.run(JavaMicroServicesSZApplication.class, args);
 	}
 
-	@Bean
-	public Sampler getSampler(){
-		return Sampler.ALWAYS_SAMPLE;
-	}
+	// @Bean
+	// public Sample getSampler(){
+	// 	return Sample.ALWAYS_SAMPLE;
+	// }
 
 
 	@Override

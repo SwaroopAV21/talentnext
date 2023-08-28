@@ -1,16 +1,11 @@
 package com.mpz.filters;
 
 import com.netflix.zuul.ZuulFilter;
-import com.netflix.zuul.exception.ZuulException;
 
 public class Errorfilter extends ZuulFilter {
 
-    @Override
-    public Object run() throws ZuulException {
-        System.out.println("\n Request error method");
-        return null;
-    }
-
+   
+ 
     @Override
     public boolean shouldFilter() {
         return true;
@@ -29,6 +24,12 @@ public class Errorfilter extends ZuulFilter {
         //router for routerfilter
         //pre for prefilter
         //error for errorfilter
+    }
+
+    @Override
+    public Object run() {
+        System.out.println("\n Request error method");
+        throw new UnsupportedOperationException("Unimplemented method 'run'");
     }
     
 }

@@ -6,16 +6,15 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import com.netflix.zuul.exception.ZuulException;
 
 public class Prefilter extends ZuulFilter {
 
     @Override
-    public Object run() throws ZuulException {
+    public Object run()  {
         RequestContext rc=RequestContext.getCurrentContext();
         HttpServletRequest htreq= rc.getRequest();
         System.out.println("\n Request method"+htreq.getMethod()+"Request URL"+htreq.getRequestURL().toString());
-        return null;
+        throw new UnsupportedOperationException("Unimplemented method 'run'");
     }
 
     @Override

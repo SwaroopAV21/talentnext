@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.slf4j.Logger;
-import org.slf4j.Logger.Factory;
+import org.slf4j.LoggerFactory;
 
 import com.rfj.entity.REntity;
 import com.rfj.service.Rservice;
@@ -17,7 +17,7 @@ public class RibbonController {
      @Autowired
     private Rservice sr;
 
-    private Logger log=logger.LoggerFactory.getLogger(RibbonController.class);
+    private Logger log=LoggerFactory.getLogger(RibbonController.class);
 
     @GetMapping("/get-product/{id}")
     public REntity getproductbyId(@PathVariable("id") int id){

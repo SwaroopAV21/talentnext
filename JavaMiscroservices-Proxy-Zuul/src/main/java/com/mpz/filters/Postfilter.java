@@ -1,14 +1,14 @@
 package com.mpz.filters;
 
 import com.netflix.zuul.ZuulFilter;
-import com.netflix.zuul.exception.ZuulException;
+//import com.netflix.zuul.exception.ZuulException;
 
 public class Postfilter extends ZuulFilter {
 
     @Override
-    public Object run() throws ZuulException {
+    public Object run() {
         System.out.println("\n Request Post method");
-        return null;
+        throw new UnsupportedOperationException("Unimplemented method 'run'");
     }
 
     @Override

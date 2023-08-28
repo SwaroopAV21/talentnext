@@ -1,14 +1,14 @@
 package com.mpz.filters;
 
 import com.netflix.zuul.ZuulFilter;
-import com.netflix.zuul.exception.ZuulException;
+
 
 public class Routefilter extends ZuulFilter {
 
     @Override
-    public Object run() throws ZuulException {
+    public Object run() {
         System.out.println("\n Request Route method");
-        return null;
+        throw new UnsupportedOperationException("Unimplemented method 'run'");
     }
 
     @Override
