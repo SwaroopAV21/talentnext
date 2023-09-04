@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.rfj.entity.REntity;
 import com.rfj.service.Rservice;
 
+import io.micrometer.core.annotation.Timed;
+
 @RestController
 @Scope("request")
 public class RibbonController {
